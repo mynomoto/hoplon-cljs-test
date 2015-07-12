@@ -10,5 +10,5 @@
              'hoplon-test.core-test))
 
 (defn ^:export run-with-karma [tc]
-  (do (jx.reporter.karma/start tc (tests-count foo.bar))
+  (do (jx.reporter.karma/start tc (tests-count hoplon-test.core-test))
       (run (cljs.test/empty-env :jx.reporter.karma/karma))))
